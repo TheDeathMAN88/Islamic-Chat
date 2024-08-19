@@ -1,0 +1,598 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Amiri', 'Lateef', 'Scheherazade', serif;
+    margin: 0.0rem;
+    padding: 0.0rem;
+    box-sizing: border-box;
+    background-image: url('path/to/your/svg.svg');
+    background-repeat: repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875rem;
+    background-color: #004d00; 
+    color: #fdf6e3;
+    border-bottom: 2px solid #fdf6e3;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 0.9375rem;
+    transition: transform 0.3s;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+}
+
+header nav ul li a {
+    color: #F7F5F5;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3em; 
+}
+
+header nav ul li a:hover {
+    color: #f1c40f;
+}
+
+.hero {
+    text-align: center;
+    border-radius: 10px;
+    padding: 2.5rem 1.25rem;
+    background-image: url('https://img.freepik.com/free-vector/stylish-golden-mosque-design-islamic-banner_1017-18354.jpg?w=1380&t=st=1687710073~exp=1687710673~hmac=b9146cc8a88f3b3c86a97a326c06797c3758aa441dca11351743ba39a02d9736');
+    background-size: cover;
+    color: #006400;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.12), 0 12px 15px 0 rgba(0,0,0,0.09);
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #006400;
+    text-align: center;
+    font-family: 'Amiri', cursive;
+    margin-bottom: 0.625rem;
+    padding: 0.625rem;
+    border-bottom: 2px solid #FFD700;
+    line-height: 1.6;
+}
+
+.btn{
+    display: inline-block;
+    margin: 1.25rem auto;
+    padding: 0.9375rem 1.875rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.125rem;
+    background-color: #006400;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #FFD700;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #FFD700;
+    color: #303030;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+    font-size: 1.125rem;
+    color: #006400;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.feature a {
+    color: #006400;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature a:hover {
+    color: #f1c40f;
+    transition: color 0.3s ease-in-out;
+}
+
+.feature img {
+    width: 20%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+main {
+    flex-grow: 1;
+    margin: 1.875rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    border: 2px solid #006400;
+    border-radius: 10px;
+    width: calc(30% - 20px);
+    background-color: rgba(255, 215, 0, 0.8);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.container div:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #fff; 
+}
+
+.container div:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    background-color: #fff; 
+}
+
+.surah-div, .hadith-div {
+    width: calc(30% - 20px); 
+    margin: 0.625rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.hadith-div a, .surah-div a {
+    color: #006400; 
+    text-decoration: none; 
+}
+
+.hadith-div a:hover, .surah-div a:hover {
+    color: #FFD700;
+    transition: color 0.3s ease-in-out;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh; 
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #006400;
+    border-radius: 10px;
+    padding: 0.625rem;
+    background-color: #FFFBDC;
+    overflow: auto; 
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    bottom: 1.25rem;
+    right: 1.25rem;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    gap: 0.625rem;
+    padding: 0.625rem; 
+}
+
+.chat-messages > div {
+    max-width: 80%;
+    word-wrap: break-word; 
+    background: #dcdcdc;
+    padding: 0.625rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.chat-messages > div:hover {
+    transform: scale(1.02);
+}
+
+.chat-form {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.chat-form input {
+    flex-grow: 1;
+    padding: 0.9375rem;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    border-radius: 10px;
+    border-end-end-radius: 0px;
+    border-top-right-radius: 0px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.chat-form input:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.chat-form button {
+    background-color: #006400;
+    color: #FFFFFF; 
+    padding: 0.9375rem 1.875rem;
+    font-family: 'Raleway', sans-serif;
+    border-end-end-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #FFD700;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-decoration: none;
+}
+
+.chat-form button:hover {
+    background-color: #FFD700; 
+    color: #004d00;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-form button:active {
+    background-color: #FFD700;
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-input, .bot-response {
+    display: flex;
+    margin: 0.625rem 0;
+    padding: 0.625rem;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #00b100;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease-in-out;
+    align-self: flex-end;
+    word-break: break-word;
+}
+
+.bot-response {
+    align-self: flex-start;
+    background-color: #FFD700;
+}
+
+.user-input > p, .bot-response > p {
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.user-input > p:before {
+    content: 'User: ';
+    font-weight: bold;
+}
+
+.bot-response > p:before {
+    content: 'Bot: ';
+    font-weight: bold;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1.25rem;
+}
+
+.founder, .Team {
+    width: calc(33.33% - 20px); 
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.founder img {
+    width: 7.6875rem;
+    height: 7.6875rem;
+    border-radius: 50%;
+}
+
+.founder h2, .founder h3 {
+    margin: 0.625rem 0;
+}
+
+.contact-container {
+    flex: 1;
+    padding: 2.5rem;
+    margin: 0.625rem;
+    background-color: #fdf6e3; 
+    color: #004d00; 
+    border: 1px solid #004d00; 
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 3px rgba(0, 77, 0, 0.2); 
+    background-color: #FFD700; 
+}
+
+.contact-container a {
+    color: #006400;
+    text-decoration: none; 
+}
+
+.contact-container a:hover {
+    color: #FFD700;
+    text-decoration: none; 
+}
+
+.page {
+    background-color: #fdf6e3;
+    padding: 1.25rem 1.875rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.ayah {
+    font-family: 'Amiri', serif;
+    font-size: 1.875rem;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    padding: 0.625rem 0;
+    margin: 0.625rem 0;
+}
+
+.ayah:last-child {
+    border-bottom: none;
+}
+
+footer {
+    justify-content: space-between;
+    background-color: #004d00; 
+    color: #fdf6e3;
+    padding: 1.25rem;
+    text-align: center;
+    border-top: 2px solid #fdf6e3;
+    flex-shrink: 0;
+}
+
+footer h3, a {
+    font-size: 1.125rem;
+    color: #F7F5F5;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer img {
+    width: 1.875rem;
+    height: auto;
+    border-radius: 10%;
+    margin: 0 4px;
+}
+
+footer a:hover {
+    color: #f1c40f;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    background-color: #fdf6e3;
+    color: #004d00;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #004d00;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us h2 {
+    margin-bottom: 1.25rem;
+    color: #004d00;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid #FFD700;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-us form input, .contact-us form textarea {
+    margin-bottom: 0.625rem;
+    padding: 0.625rem;
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #006400;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+}
+
+.contact-us form input:focus, .contact-us form textarea:focus {
+    border: 1px solid #FFD700;
+    outline: none;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 1.25rem;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: slidein;
+    -webkit-animation-duration: 0.5s;
+    animation-name: slidein;
+    animation-duration: 0.5s
+}
+
+@-webkit-keyframes slidein {
+    from {transform: translateY(-50%); opacity:0} 
+    to {transform: translateY(0); opacity:1}
+}
+
+@keyframes slidein {
+    from {transform: translateY(-50%); opacity:0}
+    to {transform: translateY(0); opacity:1}
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1280px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+        transition: width 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 1024px) {
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        margin: 15px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container div, .surah-div, .hadith-div, .chat-container, .founder, .Team {
+        width: 90%;
+        transition: width 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .container div, .surah-div, .hadith-div, .chat-container, .founder, .Team {
+        width: 85%;
+        transition: width 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li a {
+        font-size: 1em;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .container div, .surah-div, .hadith-div, .chat-container, .founder, .Team {
+        width: 80%;
+        transition: width 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 320px) {
+    header nav ul li a {
+        font-size: 0.8em;
+    }
+
+    .container div, .surah-div, .hadith-div, .chat-container, .founder, .Team {
+        width: 75%;
+        transition: width 0.3s ease-in-out;
+    }
+}
